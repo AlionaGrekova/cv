@@ -18,10 +18,8 @@ Speaking of qualities, I consider myself responsible, smart, disciplined, intell
 ### Code example:
 Task: find the sum of the elements of each diagonal of an N×N square array parallel to the side diagonal, and the minimum of the found values
 
-void find_min_sum(int **mm, int *ss,int raz)
-{
-    
-
+    void find_min_sum(int **mm, int *ss,int raz)
+    {
     int k, itog;
     for (k = 0; k < raz - 1; k++)
     {
@@ -52,10 +50,10 @@ void find_min_sum(int **mm, int *ss,int raz)
             if (itog > ss[i]) { itog = ss[i]; }
 
         }
-        cout << "\nСумма " << i + 1 << " диагонали - " << ss[i];
+        cout << "\nSum of " << i + 1 << " diagonal - " << ss[i];
     }
 
-    cout << "\nМинимальное из сумм диагоналей, параллельных побочной диагонали - " << itog << "\n";
-}
+    cout << "\nMinimum of the sums of diagonals parallel to the secondary diagonal - " << itog << "\n";
+    }
 ### Languages:
 I studied English at school and continue to study at the university
