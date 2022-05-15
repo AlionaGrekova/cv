@@ -20,15 +20,20 @@ Task: find the sum of the elements of each diagonal of an N×N square array para
 
 void find_min_sum(int **mm, int *ss,int raz)
 {
+    
+
     int k, itog;
     for (k = 0; k < raz - 1; k++)
     {
+
         ss[k] = 0;
         for (int i = 0; i <= k; i++)
         {
+
             ss[k] = ss[k] + mm[i][k - i];
         }
     }
+
     for (k = raz; k <= (raz - 1) * 2; k++)
     {
         ss[k - 1] = 0;
@@ -36,17 +41,21 @@ void find_min_sum(int **mm, int *ss,int raz)
         {
             ss[k - 1] = ss[k - 1] + mm[k - i][i];
         }
+
     }
+
     for (int i = 0; i < (raz - 1) * 2; i++)
     {
         if (i == 0) { itog = ss[0]; }
         else
         {
             if (itog > ss[i]) { itog = ss[i]; }
+
         }
-        cout << "\nSum of " << i + 1 << " diagonal - " << ss[i];
+        cout << "\nСумма " << i + 1 << " диагонали - " << ss[i];
     }
-    cout << "\nMinimum of the sums of diagonals parallel to the secondary diagonal - " << itog << "\n";
+
+    cout << "\nМинимальное из сумм диагоналей, параллельных побочной диагонали - " << itog << "\n";
 }
 ### Languages:
 I studied English at school and continue to study at the university
