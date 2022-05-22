@@ -1,5 +1,9 @@
+.header {
+	background-color: #865a3f;
+}
+
 .footer {
-    background-color: #998299;
+    background-color: #865a3f;
     padding: 20px;
 }
 
@@ -11,8 +15,130 @@ footer {
     display: block;
 }
 
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+html {
+    scroll-behavior: smooth; 
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+}
+
+.nav-link {
+  transition: .3s;
+}
+
+.nav-link {
+  color: #FFF;
+  text-decoration: none;  
+  transition: color 0.5s;
+}
+.nav-link:hover {
+  color: #4d2323;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+	
+}
+.container_1 {
+    width: 100%;
+    margin: 0 auto;
+	
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-profile{
+  width: 30%; 
+}
+
+.section_a{
+	padding-left:31%;
+	padding-right:3%;
+	padding-top:8%;
+	padding-bottom:4%;
+}
+
+.section_c{
+	padding-right:72.2%;
+	background-color:#c3ada2;
+	background-clip:content-box;
+}
+
+.section_s{
+	padding-left:31%;
+}
+
+.section{
+	width:50%;
+}
+
+.section-list {
+    list-style: none;
+}	
+
+.section-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+
+.section-item::before {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.contacts-item:before {
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+	height: 21px;
+    left: 0;
+    top: 1px;
+    width: 21px;
+}
+
+.contacts-item:first-child:before {
+    background-image: url(C:/Users/User/Desktop/cv/assets/svg/53eee33675363737ff89.svg);
+}
+
+.contacts-item:nth-child(2):before {
+    background-image: url(C:/Users/User/Desktop/cv/assets/svg/28014d409a2fc97c1df1.svg);  
+}
+
+.contacts-item:nth-child(3):before {
+    background-image: url(C:/Users/User/Desktop/cv/assets/svg/3c903c66b2c5334c8c0b.svg);
+	border: 1px solid #fff;
+}
+
+.contacts-item:nth-child(4):before {
+    background-image: url(C:/Users/User/Desktop/cv/assets/svg/53af65a27ebe7da0a5d9.svg);
+}
+
+
 body {
     color: #4d2323;
+	background-color: #d4d4d4;
     display: flex;
     flex-direction: column;
     font-family: Roboto,sans-serif;
