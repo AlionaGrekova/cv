@@ -19,73 +19,74 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+	list-style: none;
   }
 
 html {
     scroll-behavior: smooth; 
 }
 
-.nav-list {
-    list-style: none;
-}
-
 .nav-link {
-  padding: 0 20px;
-  line-height: 50px;
-}
-
-.nav-link {
+  padding: 20px;
+  line-height: 20px;
   transition: .3s;
-}
-
-.nav-link {
   color: #FFF;
   text-decoration: none;  
   transition: color 0.5s;
 }
+
 .nav-link:hover {
-  color: #4d2323;
+  background-color:#69310c;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
-	
-}
-.container_1 {
-    width: 100%;
-    margin: 0 auto;
-	
+	min-height: 50px;
+	margin:0 auto;
 }
 
-.main {
-  display: flex;
-  flex-wrap: wrap;
+@media (max-width: 1440px)
+.container {
+    padding: 0 20px;
 }
 
 .section-profile{
-  width: 30%; 
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
 }
 
-.section_a{
-	padding-left:31%;
-	padding-right:3%;
-	padding-top:8%;
-	padding-bottom:4%;
+
+.main-title {
+    color: #4d2323;
+    font-size: 40px;
+    font-weight: 350;
+    letter-spacing: 15px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    padding: 0;
+    position: relative;
+    word-spacing: 5px;
 }
 
-.section_c{
-	padding-right:72.2%;
-	background-color:#c3ada2;
-	background-clip:content-box;
+.section_a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	width:50%;
 }
 
-.section_s{
-	padding-left:31%;
+.program{
+	width: 50%;
+	text-align: left;
+}
+.p{
+	width: 50%;
 }
 
 .section{
-	width:50%;
+	width: 650px;
 }
 
 .section-list {
@@ -119,21 +120,22 @@ html {
 }
 
 .contacts-item:first-child:before {
-    background-image: url(C:/Users/User/Desktop/cv/assets/svg/53eee33675363737ff89.svg);
+    background-image: url(assets/svg/53eee33675363737ff89.svg);
 }
 
 .contacts-item:nth-child(2):before {
-    background-image: url(C:/Users/User/Desktop/cv/assets/svg/28014d409a2fc97c1df1.svg);  
+    background-image: url(assets/svg/28014d409a2fc97c1df1.svg);  
 }
 
 .contacts-item:nth-child(3):before {
-    background-image: url(C:/Users/User/Desktop/cv/assets/svg/3c903c66b2c5334c8c0b.svg);
+    background-image: url(assets/svg/3c903c66b2c5334c8c0b.svg);
 	border: 1px solid #fff;
 }
 
 .contacts-item:nth-child(4):before {
-    background-image: url(C:/Users/User/Desktop/cv/assets/svg/53af65a27ebe7da0a5d9.svg);
+    background-image: url(assets/svg/53af65a27ebe7da0a5d9.svg);
 }
+
 
 
 body {
@@ -150,4 +152,10 @@ body {
     min-height: 100vh;
     min-width: 320px;
     padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
 }
