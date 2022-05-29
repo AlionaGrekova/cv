@@ -15,6 +15,10 @@ footer {
     display: block;
 }
 
+h2{
+	font-family:'Rye', cursive;
+}
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -39,6 +43,7 @@ html {
   background-color:#69310c;
 }
 
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -57,9 +62,15 @@ html {
     width: 30%;
 }
 
+.section-title{
+	font-size: 25px;
+	font-weight:800;
+	letter-spacing: 8px;
+}
 
 .main-title {
     color: #4d2323;
+	font-family: Roboto,sans-serif;
     font-size: 40px;
     font-weight: 350;
     letter-spacing: 15px;
@@ -77,16 +88,15 @@ html {
 	width:50%;
 }
 
-.program{
-	width: 50%;
-	text-align: left;
-}
-.p{
-	width: 50%;
-}
-
 .section{
 	width: 650px;
+}
+
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
 }
 
 .section-list {
@@ -143,7 +153,7 @@ body {
 	background-color: #d4d4d4;
     display: flex;
     flex-direction: column;
-    font-family: Roboto,sans-serif;
+    font-family: 'Besley', serif;
     font-size: 18px;
     font-weight: 400;
     justify-content: space-between;
