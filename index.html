@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Besley&family=Rye&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container" >
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                    <li class="nav-item"><a href="#about me" class="nav-link">About me</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#english" class="nav-link">English</a>            </li>
+                </ul>
+            </nav>
+            <div class="toggle">
+              <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+          </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section section-profile" id="profile">
+            <img  src="assets/img/me.jpg" width="400" height="600" align=left alt="Aliona" longdesc="assets/img/me.jpg">
+            
+            </section>
+          <section class="section_a" id="about me"><h1 class=" section-title main-title" align="center">Aliona Grekova</h1><h2 class="section-title">About me</h2>
+                <p>  Speaking of qualities, I consider myself responsible, smart, disciplined, intelligent. I graduated from school with a silver medal. Now I'm studying at the university on the specialty "Management of information resources". I managed to work in the interactive museum "Festival Robotov". There I told children and adults about various robots, how they work, what they can do.</p>
+            </section>
+          <section class="section" id="contacts">
+              <h2 class="section-title">Contacts</h2>
+              <ul class="section-list">
+                <li class="section-item contacts-item">Vitebsk, Belarus</li>
+                <li class="section-item contacts-item">Email: <a href="mailto:nikagrek15@gmail.com" title="email">nikagrek15@gmail.com</a></li>
+                <li class="section-item contacts-item">GitHub: <a href="https://github.com/AlionaGrekova" title="github">AlionaGrekova</a></li>
+                <li class="section-item contacts-item">Telegram: <a href="https://t.me/Ali_o_nka" title="Telegram">@Ali_o_nka</a></li>
+              </ul>
+          </section>
+          <section class="section" id="skills">
+              <h2 class="section-title">Skills</h2>
+                <ul class="section-list_1">
+                  <li class="item"><span> HTML, CSS</span></li>
+                    <li class="item"><span> GIT, Github</span></li>
+                    <li class="item"><span> C++</span></li>
+                    <li class="item"><span>Adobe Photoshop, Blender, Inkscape</span></li>
+                </ul>
+            </section>
+          <section class="section" id="code"><h2 class="section-title">Code example</h2>
+          <p>Task: find the sum of the elements of each diagonal of an N×N square array parallel to the side diagonal, and the minimum of the found values</p>
+          <pre>
+                <code>
+void find_min_sum(int **mm, int *ss,int raz)
+{
+int k, itog;
+for (k = 0; k < raz - 1; k++)
+{
+   ss[k] = 0;
+   for (int i = 0; i <= k; i++)
+   {
+   ss[k] = ss[k] + mm[i][k - i];
+   }
+}
+
+for (k = raz; k <= (raz - 1) * 2; k++)
+{
+   ss[k - 1] = 0;
+   for (int i = (raz - 1); i >= k - raz + 1; i--)
+   {
+     ss[k - 1] = ss[k - 1] + mm[k - i][i];
+   }
+}
+
+for (int i = 0; i < (raz - 1) * 2; i++)
+{
+  if (i == 0) { itog = ss[0]; }
+  else
+  {
+    if (itog > ss[i]) { itog = ss[i]; }
+  }
+  cout << "\nSum of " << i + 1 << " diagonal - " 
+       << ss[i];
+  }
+
+cout << "\nMinimum of the sums of diagonals parallel
+      to the secondarydiagonal - " << itog << "\n";
+}
+               </code></pre>
+                   
+          </section>
+            <section class="section" id="projects">
+              <h2 class="section-title">Projects</h2>
+              <p>Work in Adobe Photoshop:</p>
+              <img src="assets/img/tree.jpg" width="400" height="600" alt="tree" longdesc="assets/img/tree.jpg"><br><br><br>
+              <img src="assets/img/photo_of_website.jpg" width="300" height="200" alt="photo_of_website" longdesc="assets/img/photo_of_website.jpg">
+              <a href="assets/сайт/бальные танцы.html">Website for ballroom dancing</a></section>
+            <section class="section section-education" id="education"><h2 class="section-title">Education</h2>
+                <p>Vitebsk State University</p>
+            </section>
+            <section class="section section-english" id="english"><h2 class="section-title">English</h2>
+                <p>I studied English at school and continue to study at the university</p>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>© 2022 <a href="https://github.com/AlionaGrekova" class="github nav-link">AlionaGrekova</a></div>
+        </div>
+    </footer>
+</body>
+</html>
